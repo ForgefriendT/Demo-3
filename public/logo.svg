@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <style>
+      .cursive { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 40px; fill: #D8CFC4; }
+      .bold-k { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 90px; fill: #222; }
+      .bold-k-glow { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 90px; fill: #D8CFC4; }
+      .serif { font-family: 'Montserrat', sans-serif; font-size: 16px; letter-spacing: 0.3em; text-transform: uppercase; fill: #D8CFC4; }
+    </style>
+  </defs>
+  <!-- Background Stylized K for Luxury Look -->
+  <text x="145" y="85" class="bold-k">K</text>
+  <!-- Main Logo Text -->
+  <text x="40" y="65" class="cursive">Kylee</text>
+  <text x="145" y="85" class="bold-k-glow">K</text>
+  <text x="210" y="85" class="serif">Nail Spa</text>
+</svg>

@@ -160,11 +160,20 @@ section {
 
 /* Header & Nav */
 .site-header {
-  padding: var(--space-3) 0;
-  position: absolute;
+  padding: var(--space-2) 0;
+  position: fixed;
   width: 100%;
-  z-index: 50;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 100;
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(216, 207, 196, 0.1);
+  transition: all 0.4s ease;
+}
+
+.site-header.scrolled {
+  padding: var(--space-1) 0;
+  background: rgba(18, 18, 18, 0.9);
 }
 
 .header-container {
@@ -173,12 +182,16 @@ section {
   align-items: center;
 }
 
-.logo {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  color: var(--accent-color);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.logo-img-footer {
+  height: 80px;
+  width: auto;
+  margin-bottom: var(--space-2);
 }
 
 .main-nav {
@@ -221,7 +234,7 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('/images/hero-bg.png');
+  background-image: url('/public/images/spainside.webp');
   background-size: cover;
   background-position: center;
   text-align: center;
