@@ -182,16 +182,45 @@ section {
   align-items: center;
 }
 
-.logo-img {
-  height: 60px;
-  width: auto;
-  display: block;
-}
-
-.logo-img-footer {
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
   width: auto;
+}
+
+.logo-bg-k {
+  position: absolute;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 80px;
+  color: #8c735a;
+  /* Muted gold/bronze */
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+  transform: translateY(-5px);
+}
+
+.logo-text {
+  position: relative;
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: var(--text-color);
+  z-index: 2;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.footer-logo {
+  justify-content: flex-start;
   margin-bottom: var(--space-2);
+}
+
+.footer-logo .logo-bg-k {
+  transform: translate(-10px, -5px);
 }
 
 .main-nav {
