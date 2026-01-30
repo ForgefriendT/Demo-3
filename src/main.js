@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.main-nav');
+    const header = document.querySelector('.site-header');
 
     if (mobileBtn && nav) {
         mobileBtn.addEventListener('click', () => {
@@ -22,6 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 
     // 2. GSAP Animations (Clean, No Tilt)
 

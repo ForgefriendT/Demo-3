@@ -234,7 +234,7 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('/public/images/spainside.webp');
+  background-image: url('/images/spainside.webp');
   background-size: cover;
   background-position: center;
   text-align: center;
