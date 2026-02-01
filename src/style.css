@@ -182,15 +182,67 @@ section {
   align-items: center;
 }
 
-.logo-img {
-  height: 70px;
-  width: auto;
-  display: block;
+/* Ported Logo from Demo 2 */
+.logo-text-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Dancing Script', cursive;
 }
 
-.logo-img-footer {
-  height: 90px;
-  width: auto;
+.logo-left-nav,
+.logo-right-nav {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.logo-center-wrapper-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-center-nav {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8B7355;
+  /* Darker brown */
+  font-family: var(--font-serif);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-nail-overlay-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  z-index: 2;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Footer Logo Override for better sizing */
+.footer-logo-override .logo-left-nav,
+.footer-logo-override .logo-right-nav {
+  font-size: 1.5rem;
+}
+
+.footer-logo-override .logo-center-nav {
+  font-size: 2.5rem;
+}
+
+.footer-logo-override .logo-nail-overlay-nav {
+  font-size: 1.1rem;
+}
+
+.footer-logo-override {
   margin-bottom: var(--space-2);
 }
 
