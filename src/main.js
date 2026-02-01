@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. GSAP Animations (Clean, No Tilt)
 
-    // Hero Sequence
+    // Hero Sequence (Snappier)
     const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-    heroTl.fromTo('.hero-bg-overlay', { opacity: 0 }, { opacity: 1, duration: 1.5 })
-        .fromTo('.hero h1', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, "-=0.5")
-        .fromTo('.hero-pre-title', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.8")
-        .fromTo('.hero-subtitle', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.6")
-        .fromTo('.hero-actions', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.6")
-        .fromTo('.rating-badge', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5 });
+    heroTl.fromTo('.hero-bg-overlay', { opacity: 0 }, { opacity: 1, duration: 1.0 })
+        .fromTo('.hero h1', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.4")
+        .fromTo('.hero-pre-title', { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.6")
+        .fromTo('.hero-subtitle', { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.5")
+        .fromTo('.hero-actions', { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.5")
+        .fromTo('.rating-badge', { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4 });
 
     // Parallax Hero
     gsap.to('.hero', {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 y: 0,
                 autoAlpha: 1,
-                duration: 1,
+                duration: 0.8,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: el,
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 y: 0,
                 autoAlpha: 1,
-                duration: 0.8,
+                duration: 0.6,
                 stagger: 0.1,
                 ease: "back.out(1.7)",
                 scrollTrigger: {
@@ -168,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             y: 0,
             opacity: 1,
-            duration: 1,
-            stagger: 0.15,
+            duration: 0.8,
+            stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: staggerItems[0],
