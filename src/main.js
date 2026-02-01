@@ -69,8 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: el,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
+                    // Trigger earlier (when top of element hits 95% of viewport height)
+                    start: "top 95%",
+                    toggleActions: "play none none none"
                 }
             }
         );
