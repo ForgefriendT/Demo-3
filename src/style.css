@@ -378,15 +378,14 @@ section {
   }
 
   .main-nav a {
-    font-size: 1.5rem;
-    /* Reduced to fit screen */
+    font-size: 1.2rem;
+    /* Significantly reduced from 1.5rem */
     /* Large touch targets */
     font-family: var(--font-serif);
     color: var(--white);
     text-transform: capitalize;
     font-weight: 400;
-    white-space: nowrap;
-    /* Prevent wrapping */
+    /* Removed white-space: nowrap to allow natural flow if needed, but size should prevent it */
   }
 
   .main-nav .btn {
