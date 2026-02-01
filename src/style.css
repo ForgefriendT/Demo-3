@@ -143,6 +143,11 @@ section {
   color: var(--black);
 }
 
+.cta-center {
+  text-align: center;
+  margin-top: var(--space-4);
+}
+
 .btn-primary {
   background: var(--accent-color);
   color: var(--black);

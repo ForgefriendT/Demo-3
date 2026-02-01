@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Booking Modal Logic
     const bookingModal = document.getElementById('booking-modal');
-    const reserveBtns = document.querySelectorAll('#header-book-btn, #mobile-reserve-btn, #hero-reserve-btn, .btn-submit');
+    // Updated selector to include the new generic class
+    const reserveBtns = document.querySelectorAll('#header-book-btn, #mobile-reserve-btn, #hero-reserve-btn, .btn-submit, .js-open-booking');
     const modalClose = document.querySelector('.modal-close');
     const bookingOptions = document.querySelectorAll('.booking-option');
     const steps = document.querySelectorAll('.booking-step');
