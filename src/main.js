@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: staggerItems[0],
-                start: "top 85%",
+                start: "top 90%", // Trigger earlier on mobile
                 toggleActions: "play none none reverse"
             }
         }
